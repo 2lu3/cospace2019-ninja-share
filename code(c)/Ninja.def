@@ -1,0 +1,15 @@
+LIBRARY Ninja.dll
+
+EXPORTS
+GetCommand
+GetCurAction
+GetDebugInfo
+GetGameID
+GetSuperObj
+GetTeamName
+GetTeleport
+IsGameEnd
+OnTimer
+SetDataAI
+SetGameID
+SetSuperObj

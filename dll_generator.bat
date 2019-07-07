@@ -1,0 +1,1 @@
+g++ -shared -static ./code(c++)/CommonTools.cpp ./code(c++)/CospaceSettings.cpp ./code(c++)/Hikaru.cpp ./code(c++)/JudgeAngleTools.cpp ./code(c++)/JudgeColorTools.cpp ./code(c++)/LogErrorTools.cpp ./code(c++)/main.cpp -o Ninja.dll

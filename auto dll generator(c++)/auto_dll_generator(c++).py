@@ -170,6 +170,7 @@ if __name__ == '__main__':
             print('mode : animal')
         elif arg == '--help':
             print(command_list)
+            exit()
         elif '--cplus=' in arg:
             command = command + ' --' + arg[8:]
             print('cplus command : ' + arg[8:])

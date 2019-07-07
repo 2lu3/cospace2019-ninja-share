@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <random>
 
 #define REP for
 #define rep(i, n) REP(int i = 0; i < n; i++)
@@ -34,12 +35,27 @@ void addEquationOfRectangle(int x1, int y1, int x2, int y2)
 
 int main()
 {
+    random_device rnd;
     system("chcp 932");
     system("cls");
-    cout << "壁の番号を入力してください" << endl;
-    cout << "Please enter the number of wall" << endl;
-    scanf("%d", &wall_num);
 
+    cout << "下の例のように、27 x 36のマップ情報を入力してください" << endl;
+    cout << "please enter 27 x 36 array to here like the example." << endl;
+
+    rep(wj, map_width)
+    {
+        rep(hi, map_height)
+        {
+            cout << rnd() % 4 << " ";
+        }
+        cout << endl;
+    }
+    cout << endl;
+
+    cout << "入力待ち" << endl;
+    cout << "I am waiting for input" << endl;
+
+    cout << endl;
     rep(wj, map_width)
     {
         rep(hi, map_height)
@@ -47,6 +63,9 @@ int main()
             scanf("%d", &map_data[hi][wj]);
         }
     }
+    cout << "壁の番号を入力してください" << endl;
+    cout << "Please enter the number(id) of wall" << endl;
+    scanf("%d", &wall_num);
 
     // 外側の壁を追加
     addEquationOfRectangle(0, 0, map_width * magnification, map_height * magnification);

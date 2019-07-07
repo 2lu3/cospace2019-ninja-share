@@ -31,8 +31,8 @@ registered_color = [
         [255, 255, 255], # white
         [255, 255, 0], # yellow
         [221, 186, 151], # wall
-        [202, 202, 202], # swampland
-        [232, 125, 49], # deposit
+        [166, 166, 166], # swampland
+        [255, 153, 0], # deposit
         [0, 176, 240], # superarea
         [237, 28, 36], # red
         [63, 72, 204], # cyan
@@ -256,11 +256,11 @@ def setButtons(root):
     listShowMode.bind("<ButtonRelease-1>", onClickModeChange)
     listShowMode.place(x = image_width + margin * 2, y = margin * (len(button_labels) + 2))
 
-    button = tk.Button(root, text="出力")
+    button = tk.Button(root, text="Output")
     button.bind("<Button-1>", onClickOutput)
     button.place(x = image_width + margin * 2, y = margin * (len(button_labels) + 8))
 
-    button = tk.Button(root, text="ロード")
+    button = tk.Button(root, text="Load")
     button.bind("<Button-1>", onClickLoadData)
     button.place(x = image_width + margin * 2, y = margin * (len(button_labels) + 10))
 

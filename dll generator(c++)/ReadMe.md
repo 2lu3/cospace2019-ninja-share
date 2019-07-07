@@ -1,4 +1,12 @@
-# dll generatorの使い方
+# dll generator(c++)の使い方(How to use dll generator(c++))
+
+## For English user
+
+Please see the ReadMe in dll generator(c).
+
+It's same user guide.
+
+## Abstract
 
 dll generatorは、Cospace用のdllファイルを自動で作成するツールである。
 

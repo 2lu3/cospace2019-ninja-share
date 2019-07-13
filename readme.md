@@ -10,6 +10,10 @@ If there is any error or English syntax error, please contact me.
 
 もし、ソースコードのエラーや、英語の文法的な間違いがあれば、指摘してもらえると嬉しいです。
 
+If you want my source code quickly, please look at `code(c++)/Hikaru.cpp`.
+
+もし、私のソースコードをすぐに見たければ、`code(c++)/Hikaru.cpp`を見てください
+
 ## OverView(概要)
 
 There are 8 folders.
